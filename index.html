@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-3</title>
+    <style>
+        #hoverElement {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome!</p>
+    <button id="ab">CLICK HERE!</button>
+    <input type="text" id="textin">
+    <div id="hoverElement"> Try hovering here ;)</div>
+    <script>
+       document.getElementById('ab').onclick = function() {
+        alert('Button clicked, Great job!');
+       };
+
+      document.getElementById('textin').oninput = function() {
+        console.log(this.value);
+      };
+      
+      document.getElementById('hoverElement').onmouseover = function() {
+        this.style.backgroundColor = 'blue';
+    };
+    document.getElementById('hoverElement').onmouseout = function() {
+        this.style.backgroundColor = 'lightgray';
+    };
+    
+    let strs = "Hello, world!";
+    console.log(strs.length);
+
+    let stre = "Hello, world!";
+console.log(stre[7]);  // Logs 'w'
+
+let str1 = "Hello, ";
+let str2 = "world!";
+let result = str1 + str2;
+console.log(result);
+    
+let strt = "Hello, world!";
+let upperStr = strt.toUpperCase();
+console.log(upperStr);
+
+let stri = "   Hello, world!   ";
+let trimmedStr = stri.trim();
+console.log(trimmedStr);
+
+let strr = "Hello, world!";
+let newStr = strr.replace("world", "everyone");
+console.log(newStr);
+
+let s = "Hello, world!";
+let position = s.indexOf("world");
+console.log(position);
+
+let st = "Hello, world!";
+let hasWorld = st.includes("world");
+console.log(hasWorld);
+
+let sr = "Hello, world!";
+let extractedWord = sr.slice(7, 12);
+console.log(extractedWord);
+
+let name = "John";
+let age = 30;
+let res = `My name is ${name} and I am ${age} years old.`;
+console.log(res);
+
+let multilineStr = `This is a multiline string.
+It spans multiple lines.
+Each line is separated by a newline character.`;
+console.log(multilineStr);
+
+let a = 5;
+let b = 10;
+let r = `The sum of ${a} and ${b} is ${a + b}.`;
+console.log(r);
+
+let numm = 42;
+console.log(numm);
+
+let floatNum = 3.14;
+console.log(floatNum);
+
+let strv = "123";
+let numb = Number(strv);
+console.log(numb);
+
+let bigIntVar = BigInt(12345678901234567890);
+console.log(bigIntVar);
+
+let bigInt1 = BigInt(12345678901234567890);
+let bigInt2 = BigInt(98765432109876543210);
+let bigIntSum = bigInt1 + bigInt2;
+console.log(bigIntSum);
+
+
+let bigIntVar4 = BigInt(12345678901234567890);
+let bigIntStr = bigIntVar4.toString();
+console.log(bigIntStr);
+
+let numi = 4.7;
+let roundedNum = Math.round(numi);
+console.log(roundedNum);
+
+let num = 42;
+let numStr = num.toString();
+console.log(numStr);
+
+let Ed = "3.14";
+let floatNumm = parseFloat(Ed);
+console.log(floatNumm);
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.NaN);
+
+    </script>
+</body>
+</html>
